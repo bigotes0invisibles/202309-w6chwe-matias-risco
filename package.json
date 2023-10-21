@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "test:dev": "jest -w",
+    "test:dev": "jest --watchAll",
     "prepare": "husky install"
   },
   "keywords": [],
