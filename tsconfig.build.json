@@ -1,5 +1,4 @@
 {
   "extends": "./tsconfig.json",
-  "resolveJsonModule": false,
   "exclude": ["src/**/*.Mock.*", "src/**/*.test.ts"]
 }

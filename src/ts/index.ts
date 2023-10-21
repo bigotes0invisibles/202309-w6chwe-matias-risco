@@ -3,7 +3,7 @@ import App from "./components/App/App.js";
 import { getDataApi } from "./data/fuctions.js";
 import { type PokemonApi } from "./type";
 
-const url = "https://pokeapi.co/api/v2/pokemon?offset=0&limit=50";
+const url = "https://pokeapi.co/api/v2/pokemon?offset=0&limit=10";
 const pokemonApi = (await getDataApi(url)) as PokemonApi;
 const body = document.querySelector("body") as HTMLElement;
 
