@@ -18,4 +18,5 @@ abstract class Component {
   protected abstract populate(): void;
 }
 
+
 export default Component;
