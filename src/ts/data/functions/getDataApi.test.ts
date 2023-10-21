@@ -2,6 +2,7 @@ import { pokemonsData } from "../ExpectedData";
 import { getDataApi } from "../fuctions";
 import { mockFetch } from "../mockFetch";
 import mockData from "./../mockData.json";
+
 describe("Given the function getDataApi", () => {
   describe("When it recibe a url as a sting", () => {
     test("it should return a object", async () => {
