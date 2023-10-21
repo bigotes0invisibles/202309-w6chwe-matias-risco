@@ -1,5 +1,5 @@
 import Pokemon from "./Pokemon/Pokemon.js";
-import PokemonList from "./components/PokemonList/PokemonList.js";
+import App from "./components/App/App.js";
 import { getDataApi } from "./data/fuctions.js";
 import { type PokemonApi } from "./type";
 
@@ -11,6 +11,5 @@ const pokemons = pokemonApi.results.map(
   (pokemoninfo): Pokemon => new Pokemon(pokemoninfo.name, pokemoninfo.url),
 );
 
-const pokemonList = new PokemonList(body, pokemons);
-
-pokemonList.render();
+const app = new App(body, pokemons);
+app.render();
