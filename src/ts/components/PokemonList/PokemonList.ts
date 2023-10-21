@@ -1,4 +1,4 @@
-import type Pokemon from "../../Pokemon/Pokemon";
+import type Pokemon from "../../Pokemon/Pokemon.ts";
 import Component from "../Component/Component.js";
 import PokemonCard from "../PokemonCard/PokemonCard.js";
 
