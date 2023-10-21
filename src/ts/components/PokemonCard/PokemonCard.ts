@@ -1,5 +1,5 @@
-import type Pokemon from "../../Pokemon/Pokemon";
-import Component from "../Component/Component";
+import type Pokemon from "../../Pokemon/Pokemon.js";
+import Component from "../Component/Component.js";
 
 class PokemonCard extends Component {
   constructor(
@@ -9,7 +9,7 @@ class PokemonCard extends Component {
     super(parentElement, "div", "pokemon-card");
   }
 
-  public populate(): void {
+  populate(): void {
     this.element.innerHTML = `
       <img src="${this.pokemon.getUrlPicture()}" alt="es un pokemon">
       <h2>${this.pokemon.pokemonName}</h2>

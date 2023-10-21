@@ -7,3 +7,8 @@ export interface PokemonApi {
     url: string;
   }>;
 }
+
+export interface PokemonInfo {
+  name: string;
+  url: string;
+}
