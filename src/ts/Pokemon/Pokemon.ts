@@ -5,9 +5,9 @@ class Pokemon {
     private readonly pokemonName: string,
     pokemonUrl: string,
   ) {
-    this.image = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonUrl.at(
-      -2,
-    )!}.png`;
+    const imageId = Number(pokemonUrl.split("/").at(-2)!);
+
+    this.image = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${imageId}.png`;
   }
 
   public getUrlPicture(): string {
