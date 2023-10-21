@@ -1,7 +1,7 @@
 /** @type {import('ts-jest').JestConfigWithTsJest} */
 module.exports = {
-  preset: "jsdom",
-  testEnvironment: "node",
+  preset: "ts-jest",
+  testEnvironment: "jsdom",
   testMatch: ["**/src/**/*.test.ts"],
   resolver: "jest-ts-webcompat-resolver",
 };
