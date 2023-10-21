@@ -1,7 +1,7 @@
-import { pokemonsData } from "../expectDataMock";
+import { pokemonsData } from "../expectData.Mock";
 import { getDataApi } from "../fuctions";
-import { mockFetch } from "../fetchMock";
-import mockData from "./../dataMock.json";
+import { mockFetch } from "../fetch.Mock";
+import mockData from "./../data.Mock.json";
 
 describe("Given the function getDataApi", () => {
   describe("When it recibe a url as a sting", () => {
