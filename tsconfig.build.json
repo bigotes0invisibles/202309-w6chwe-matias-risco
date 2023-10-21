@@ -1,6 +1,5 @@
 {
   "extends": "./tsconfig.json",
-  // 👇️ this may vary depending on how you
-  // name your test files
+  "resolveJsonModule": false,
   "exclude": ["src/**/*.Mock.*", "src/**/*.test.ts"]
 }
