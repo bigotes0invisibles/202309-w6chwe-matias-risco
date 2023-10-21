@@ -2,7 +2,7 @@ class Pokemon {
   private readonly image: string;
 
   constructor(
-    private readonly pokemonName: string,
+    public readonly pokemonName: string,
     pokemonUrl: string,
   ) {
     const imageId = Number(pokemonUrl.split("/").at(-2)!);
