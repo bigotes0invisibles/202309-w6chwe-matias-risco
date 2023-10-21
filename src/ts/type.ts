@@ -1,3 +1,8 @@
+export interface PokemonInfo {
+  name: string;
+  url: string;
+}
+
 export interface PokemonApi {
   count: number;
   next: string;
