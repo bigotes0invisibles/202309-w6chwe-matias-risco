@@ -3,10 +3,10 @@ import Component from "../Component/Component.js";
 
 class PokemonCard extends Component {
   constructor(
-    parentElement: HTMLElement,
+    fatherElement: HTMLElement,
     private readonly pokemon: Pokemon,
   ) {
-    super(parentElement, "div", "pokemon-card");
+    super(fatherElement, "div", "pokemon-card");
   }
 
   populate(): void {
