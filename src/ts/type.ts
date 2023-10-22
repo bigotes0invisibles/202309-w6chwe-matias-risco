@@ -15,5 +15,5 @@ export interface PokemonApi {
 
 export interface ButtonInfo{
   method:()=>unknown;
-  innerHtml?:string;
+  innerHtml:string;
 }
