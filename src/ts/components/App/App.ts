@@ -25,7 +25,7 @@ class App extends Component {
 
   protected async populate() {
     this.element.innerHTML = `
-      <header>
+      <header class="header">
         <h1>
           Pokemon
         </h1>
