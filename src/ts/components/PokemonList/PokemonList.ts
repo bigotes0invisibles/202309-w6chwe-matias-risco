@@ -8,7 +8,7 @@ class PokemonList extends Component {
     parentElement: HTMLElement,
     private readonly pokemons: Pokemon[],
   ) {
-    super(parentElement, "ul", "grid");
+    super(parentElement, "ul", "pokemons-list");
     this.children = [];
   }
 
