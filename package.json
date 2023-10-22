@@ -9,7 +9,7 @@
     "prepare": "husky install",
     "watch:ts": "tsc --watch --project tsconfig.build.json",
     "watch:scss": "sass --watch src/sass/index.scss public/css/index.css",
-    "build": "tsc --project tsconfig.build.json",
+    "build": "npm run build:ts && npm run build:scss",
     "build:scss": "sass src/sass/index.scss public/css/index.css",
     "build:ts": "tsc --project tsconfig.build.json"
   },
