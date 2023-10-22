@@ -7,8 +7,11 @@
     "test": "jest",
     "test:dev": "jest --watchAll",
     "prepare": "husky install",
+    "watch:ts": "tsc --watch",
+    "watch:scss": "sass --watch src/yourgamename.scss yourgamename.css",
     "build": "tsc --project tsconfig.build.json",
-    "build:dev": "tsc --project tsconfig.build.json -w"
+    "build:scss": "sass src/sass/index.scss css/index.css",
+    "build:ts": "tsc --project tsconfig.build.json"
   },
   "keywords": [],
   "author": "",
@@ -29,6 +32,7 @@
     "jest-ts-webcompat-resolver": "^1.0.0",
     "lint-staged": "^15.0.2",
     "prettier": "^3.0.3",
+    "sass": "^1.69.4",
     "ts-jest": "^29.1.1",
     "typescript": "^5.2.2"
   }
