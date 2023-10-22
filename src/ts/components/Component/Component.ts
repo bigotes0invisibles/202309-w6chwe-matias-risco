@@ -2,7 +2,7 @@ abstract class Component {
   protected element: HTMLElement;
 
   constructor(
-    private readonly parentElement: HTMLElement,
+    protected readonly parentElement: HTMLElement,
     tagName: string,
     className: string,
   ) {
@@ -17,6 +17,5 @@ abstract class Component {
 
   protected abstract populate(): void;
 }
-
 
 export default Component;
