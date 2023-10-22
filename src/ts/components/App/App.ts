@@ -6,16 +6,20 @@ import PokemonList from "../PokemonList/PokemonList.js";
 class App extends Component {
   private nexturl: string;
   private previousurl: string;
+  private readonly children: unknown[];
   constructor(
     parentElement: HTMLElement,
     private readonly pokemonUrlApi: string,
   ) {
     super(parentElement, "div", "App");
+    this.children = [];
   }
 
   updateinfo = async (url: string) => {
-    const data = this.getpokemonApiData(url);
-    return data;
+    const data = await this.getpokemonApiData(url);
+    (this.children as PokemonList[]).forEach((pokemonList) => {
+      pokemonList.update(data);
+    });
   };
 
   protected async populate() {
@@ -33,6 +37,7 @@ class App extends Component {
     const pokemonData = await this.getpokemonApiData(this.pokemonUrlApi);
     const pokemonList = new PokemonList(this.element, pokemonData);
     pokemonList.render();
+    this.children.push(pokemonList);
   }
 
   private async getpokemonApiData(url: string) {

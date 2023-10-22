@@ -1,4 +1,4 @@
-import Pokemon from "../Pokemon/Pokemon";
+import Pokemon from "../Pokemon/Pokemon.js";
 import { type PokemonApi } from "../type";
 
 export const getDataApi = async (url: string) => {
