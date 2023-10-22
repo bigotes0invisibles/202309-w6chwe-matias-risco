@@ -2,7 +2,7 @@
   "name": "202309-w6end-matias-risco",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "public/js/index.js",
   "scripts": {
     "test": "jest",
     "test:dev": "jest --watchAll",

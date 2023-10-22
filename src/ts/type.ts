@@ -12,3 +12,8 @@ export interface PokemonApi {
     url: string;
   }>;
 }
+
+export interface ButtonInfo{
+  method:()=>unknown;
+  innerHtml:string;
+}
