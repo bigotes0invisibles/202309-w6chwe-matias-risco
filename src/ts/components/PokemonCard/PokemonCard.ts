@@ -16,7 +16,7 @@ class PokemonCard extends Component {
   protected populate(): void {
     this.element.innerHTML = `
       <img src="${this.pokemon.getUrlPicture()}" alt="es un pokemon">
-      <h2>${this.pokemon.pokemonName}</h2>
+      <span class="pokemon-card__text">${this.pokemon.pokemonName}</span>
     `;
   }
 }
